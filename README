@@ -1,0 +1,29 @@
+
+Just my exercise place. For running node js code on AWS EC2
+
+# Structure assumption
+[your project]
+	/aws-ec2-script
+	/configure.sh (default not exist)
+	/[your pem file].pem (default not exit)
+	/server.js (default not exit)
+
+# How to first run
+## Step1: Configure
+Write your own configure file: [your project]/configure.sh
+
+## Step2: write node js server code
+Write your own node js code: [your project]/server.js
+
+## Step3:
+Put AWS EC2 pem file in [your project]/.
+Please note that aws-ec2-script shall under [your project]
+
+## Step4: install g++, nodejs, loopback ...
+cd aws-ec2-script/
+./init_run.sh
+
+## Step5:
+./upload_ec2.sh [file name] # use this to update/run [your node js code] on EC2
+./ssh_ec2.sh # use this to connect to your EC2 instances
+
