@@ -34,7 +34,8 @@ curl -fsSL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-doctor 
 # upgrade ruby
 version="2.4.2"
 yum install -y readline-devel
-rbenv install
+rbenv install ${version}
+rbenv global 2.4.2 # need re-login to effect
 
 # install latest node
 version="4.4.5"
