@@ -8,3 +8,8 @@ npm install npm@latest -g
 
 npm install -g loopback-cli
 npm install -g apiconnect
+
+
+npm install --global gulp
+npm install --global webpack
+npm install --global babel-cli
